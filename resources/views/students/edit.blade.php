@@ -28,13 +28,13 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-2">
-                    <input type="text" name="student" class="form-control" value="{{ $student->students }}" placeholder="Nama">
+                    <input type="text" name="student" class="form-control" value="{{ $student->name }}" placeholder="Nama">
                 </div>
                 <div class="mb-2">
-                    <input type="date" name="student" class="form-control" value="{{ $student->student }}" placeholder="Tanggal Lahir">
+                    <input type="number" name="age" class="form-control" value="{{ $student->age }}" placeholder="Umur">
                 </div>
                 <div class="mb-2">
-                    <input type="text" name="student" class="form-control" value="{{ $student->students }}" placeholder="Jenis Kelamin">
+                    <input type="text" name="gender" class="form-control" value="{{ $student->gender }}" placeholder="Jenis Kelamin">
                 </div>
                 <div class="mb-2">
                     <input type="reset" class="btn btn-secondary"> &nbsp; <input type="submit" value="Update" class="btn btn-primary">
